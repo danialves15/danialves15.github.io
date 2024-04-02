@@ -2,3 +2,55 @@ body
 {
   background-color: rgb(255, 251, 242);
 }
+
+
+a:link 
+{
+  color: rgb(111, 73, 44);
+  text-decoration: none;
+}
+
+
+a:hover 
+{
+  color: rgb(232, 239, 25);
+  text-decoration: underline;
+}
+
+a:active 
+{
+  color: rgb(111, 73, 44);
+  text-decoration: underline;
+}
+
+a:visited 
+{
+  color: rgb(111, 73, 44);
+  text-decoration: none;
+}
+
+
+h1 
+{
+  font-size: 4em;
+  line-height: 1.2em;
+  
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  
+  text-align: left;
+}
+
+@font-face 
+{
+  font-family: "Angelina-rnlA";
+  src:
+    url("linkToTheFontFolder/File.woff2") format("woff2"),
+    url("linkToTheFontFolder/File.woff")  format("woff");
+}
+
+
+body 
+{
+  font-family: "Angelina-rnlA", Courier, monospace;
+}
