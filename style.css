@@ -1,6 +1,15 @@
+@font-face 
+{
+  font-family: "angelina";
+  src:
+    url("fonts/angelina.otf") format("otf");
+}
+
+
 body 
 {
   background-color: rgb(255, 251, 242);
+  font-family: "angelina", Courier, monospace;
 }
 
 
@@ -19,7 +28,7 @@ a:hover
 
 a:active 
 {
-  color: rgb(111, 73, 44);
+  color: rgb(232, 239, 25);
   text-decoration: underline;
 }
 
@@ -41,16 +50,34 @@ h1
   text-align: left;
 }
 
-@font-face 
+
+figure img  
 {
-  font-family: "Angelina-rnlA";
-  src:
-    url("linkToTheFontFolder/File.woff2") format("woff2"),
-    url("linkToTheFontFolder/File.woff")  format("woff");
+  width: 500px;
+  float: left;
+  margin: 200px;
+}
+
+main img 
+{
+  width: 50%; 
 }
 
 
-body 
+nav 
 {
-  font-family: "Angelina-rnlA", Courier, monospace;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  
+  display: inline-block;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+nav
+{
+  margin-left: 10px;
 }
