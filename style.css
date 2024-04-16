@@ -5,12 +5,19 @@
     url("fonts/angelina.otf") format("otf");
 }
 
+* 
+{
+  margin: 0px;
+  padding: 0px;
+}
 
 body 
 {
   background-color: rgb(255, 251, 242);
   font-family: "angelina", Courier, monospace;
 }
+
+
 
 
 a:link 
@@ -48,24 +55,43 @@ h1
   letter-spacing: 0.1em;
   
   text-align: left;
+  margin-left: 2%;
 }
 
 
-figure img  
+figure 
 {
-  width: 300px;
+  width: 30%;
+  
+  float: left;
+  
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+
+figure>img 
+{
+  width: 100%;
+}
+
+
+figcaption h3 
+{
+  text-align: center
+}
+
+main>img 
+{
+  width: 100%;
   float: right;
-  margin: 200px;
-}
-
-main img 
-{
-  width: 50%; 
+  margin: 10px; 
 }
 
 
 nav 
 {
+  margin-left: 2%;
   border-width: 2px;
   border-style: solid;
   border-radius: 20px;
@@ -75,4 +101,6 @@ nav
   padding-bottom: 5px;
   padding-top: 5px;
   padding-left: 10px;
+
+  color: rgb(111, 73, 44);
 }
