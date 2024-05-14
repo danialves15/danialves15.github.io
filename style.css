@@ -14,7 +14,8 @@ body
   padding: 20px;
 
   font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
+  /*  font-optical-sizing: auto; */
+  font-size: 1em;
   font-weight: 300; /*200 - 800, de 100 em 100*/
   font-style: normal; /* italic */
 }
@@ -169,3 +170,47 @@ nav
 
   color: rgb(196, 117, 215);
 }
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) 
+{
+  body 
+  {
+    /*background-color: red;*/
+    font-size: 0.3em;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+  body 
+  {
+    /*background-color: green;*/
+    font-size: 0.8em;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) 
+{
+  body 
+  {
+    background-color: blue;
+  }
+}*/
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) 
+{
+  body 
+  {
+    background-color: white;
+  }
+}*/
