@@ -25,28 +25,30 @@ body
 
 a:link 
 {
-  color: rgb(196, 117, 215);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 
 a:hover 
 {
-  color: rgb(189, 25, 239);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
 a:active 
 {
-  color: rgb(189, 25, 239);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
 a:visited 
 {
-  color: rgb(196, 117, 215);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
+
+
 
 
 h1 
@@ -59,7 +61,16 @@ h1
   
   text-align: center;
   margin-left: 2%;
+
+ 
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" ;
 }
+
 
 h3
 {
@@ -68,8 +79,11 @@ h3
   letter-spacing: 0.1em;
   
   text-align: left;
-  
-  margin-top: 2%;
+}
+
+nav
+{
+color:rgb(196, 117, 215)
 }
 
 address
@@ -106,7 +120,26 @@ address
 
 #project_container>a>article>figure 
 {
-  /*flex-basis: 40%;*/
+  position: relative;
+  display: grid;
+  place-items: center center;
+  margin-bottom: 4%;
+}
+
+#project_container>a>article>figure>figcaption
+{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center center;
+}
+
+#project_container>a>article>figure>figcaption:hover 
+{
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #project_container>a>article>figure>img 
