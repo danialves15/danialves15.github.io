@@ -1,6 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
 
 * 
 {
@@ -68,7 +69,7 @@ h1
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
-    "ELSH" ;
+    "ELSH" 0;
 }
 
 
@@ -81,10 +82,6 @@ h3
   text-align: left;
 }
 
-nav
-{
-color:rgb(196, 117, 215)
-}
 
 address
 {
@@ -135,6 +132,16 @@ address
   height: 100%;
   display: grid;
   place-items: center center;
+}
+
+#project_container>a>article>figure>figcaption>h3
+{
+  visibility: hidden;
+}
+
+#project_container>a>article>figure>figcaption:hover > h3
+{
+  visibility: visible;
 }
 
 #project_container>a>article>figure>figcaption:hover 
@@ -204,6 +211,36 @@ nav
   color: rgb(196, 117, 215);
 }
 
+nav li 
+{
+  display: inline;
+  margin-left: 10px;
+}
+
+nav a:link 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: none;
+}
+
+
+nav a:hover 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: underline;
+}
+
+nav a:active 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: underline;
+}
+
+nav a:visited 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: none;
+}
 
 
 
@@ -212,8 +249,33 @@ nav
 {
   body 
   {
-    /*background-color: red;*/
+    background-color: red;
+  }
+
+  #project_container>figure 
+  {
+    flex-basis: 100%;
+  }
+
+  #project_container>a  
+  {
+    flex-basis: 100%;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) 
+{
+  body 
+  {
+    background-color: green;
     font-size: 0.3em;
+  }
+
+  #project_container>figure 
+  {
+    flex-basis: 49%;
   }
 
   #project_container>a  
@@ -223,32 +285,31 @@ nav
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) 
-{
-  body 
-  {
-    /*background-color: green;*/
-    font-size: 0.8em;
-  }
-}
-
-
 /* Large devices (laptops/desktops, 992px and up) */
-/*@media only screen and (min-width: 992px) 
+@media only screen and (min-width: 992px) 
 {
   body 
   {
     background-color: blue;
   }
-}*/
+
+  #project_container>figure 
+  {
+    flex-basis: 32%;
+  }
+
+  #project_container>a
+  {
+    flex-basis: 32%;
+  }
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/*@media only screen and (min-width: 1200px) 
+@media only screen and (min-width: 1200px) 
 {
   body 
   {
-    background-color: white;
+    /*background-color: white;*/
   }
-}*/
+}
