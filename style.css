@@ -253,10 +253,10 @@ nav a:visited
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) 
 {
-  body 
+  /*body 
   {
-    /*background-color: red;*/
-  }
+    /*background-color: red;
+  }*/
 
   #project_container>figure 
   {
@@ -273,11 +273,11 @@ nav a:visited
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) 
 {
-  body 
+  /*body 
   {
-    /*background-color: green;*/
+    background-color: green;
     
-  }
+  }*/
 
   #project_container>figure 
   {
@@ -294,10 +294,10 @@ nav a:visited
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 {
-  body 
+  /*body 
   {
-    /*background-color: blue;*/
-  }
+    background-color: blue;
+  }*/
 
   #project_container>figure 
   {
@@ -314,8 +314,8 @@ nav a:visited
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) 
 {
-  body 
+  /*body 
   {
-    /*background-color: white;*/
-  }
+    /*background-color: white;
+  }*/
 }
