@@ -209,10 +209,10 @@ nav
   border-radius: 20px;
   
   display: inline-block;
-  padding-right: 10px;
+  padding-right: 15px;
   padding-bottom: 5px;
   padding-top: 5px;
-  padding-left: 10px;
+  padding-left: 5px;
 
   color: rgb(196, 117, 215);
 }
@@ -243,6 +243,32 @@ nav a:active
 }
 
 nav a:visited 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: none;
+}
+
+
+
+address a:link 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: none;
+}
+
+address a:hover 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: underline;
+}
+
+address a:active 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: underline;
+}
+
+address a:visited 
 {
   color: rgb(196, 117, 215);
   text-decoration: none;
