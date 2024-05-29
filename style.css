@@ -23,16 +23,17 @@ body
   background-color: rgb(255, 227, 246);
   padding: 20px;
 
+  /*fonte usada para todo o corpo de texto*/
   font-family: "Karla", sans-serif;
   /*  font-optical-sizing: auto; */
   font-size: 1em;
-  font-weight: 300; /*200 - 800, de 100 em 100*/
+  font-weight: 300; /*fonte variável de 200 - 800, valor escolhido de 100 em 100*/
   font-style: normal; /* italic */
 }
 
 
-
-
+/*aqui podemos encontrar as hiperligações referentes às captions dos projetos na página Works, desta forma o link, 
+antes de depois de estar sobreposto pelo rato, ativo e visitado apresenta sempre a mesma cor por motivos de gosto pessoal*/
 a:link 
 {
   color: rgb(255, 255, 255);
@@ -59,8 +60,35 @@ a:visited
 }
 
 
+/*o mesmo acontece às hisperligações da adress, que mantêm sempre a mesma cor*/
+address a:link 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: none;
+}
+
+address a:hover 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: underline;
+}
+
+address a:active 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: underline;
+}
+
+address a:visited 
+{
+  color: rgb(196, 117, 215);
+  text-decoration: none;
+}
 
 
+
+/*h1 usado no título que aparece em todas as páginas, foi importada previamente a fonte agora ajustada em relação a tamanhos, 
+alinhamento e margens*/
 h1 
 {
   font-size: 4em;
@@ -81,7 +109,8 @@ h1
     "ELSH" 0;
 }
 
-
+/*h3 usado no corpo de texto, foi importada previamente a fonte e já foi ajustada acima, aqui é apenas ajustada para corresponder aos 
+substítulos, daí um alinhamento diferente*/
 h3
 {
   line-height: 1.5em;
@@ -91,7 +120,7 @@ h3
   text-align: left;
 }
 
-
+/*adress é referente às informações na página contacts*/
 address
 {
   line-height: 1.5em;
@@ -102,6 +131,7 @@ address
   
   margin-top: 2%;
 }
+
 
 #project_container 
 {
@@ -133,20 +163,25 @@ address
   place-items: center center;
 }
 
+
+/*aqui a visibilidade aparece escondida, desta forma a caption apenas se torna visível quando o rato passa por cima da imagem*/
 #project_container>a>article>figure>figcaption>h3
 {
   visibility: hidden;
 }
-
 #project_container>a>article>figure>figcaption:hover > h3
 {
   visibility: visible;
 }
 
+/*semelhante à caption o mesmo acontece com este background que apenas aparece quando o rato passa por cima da imagem, 
+como o background é preto e foi adicionada transparência dá um efeito de sombra facilitando também a leitura da caption*/
 #project_container>a>article>figure>figcaption:hover 
 {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+
 
 #project_container>a>article>figure>img 
 {
@@ -249,33 +284,6 @@ nav a:visited
   color: rgb(196, 117, 215);
   text-decoration: none;
 }
-
-
-
-address a:link 
-{
-  color: rgb(196, 117, 215);
-  text-decoration: none;
-}
-
-address a:hover 
-{
-  color: rgb(196, 117, 215);
-  text-decoration: underline;
-}
-
-address a:active 
-{
-  color: rgb(196, 117, 215);
-  text-decoration: underline;
-}
-
-address a:visited 
-{
-  color: rgb(196, 117, 215);
-  text-decoration: none;
-}
-
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
