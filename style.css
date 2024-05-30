@@ -91,25 +91,25 @@ address a:visited
 /*o mesmo acontece à hisperligação do butão nos services, que mantêm sempre a mesma cor*/
 #botão a:link 
 {
-  color: rgb(196, 117, 215);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 #botão a:hover 
 {
-  color: rgb(196, 117, 215);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
 #botão a:active 
 {
-  color: rgb(196, 117, 215);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
 #botão a:visited 
 {
-  color: rgb(196, 117, 215);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -122,7 +122,8 @@ o objetivo é direcionar as pessoas ao meu trabalho, alinhando desta forma ao ce
   text-align: center;
 }
 
-/*semelhante à criação da nav foi colocado um border à volta da hiperligação para criar o botão*/
+/*semelhante à criação da nav foi colocado um border à volta da hiperligação para criar o botão, a diferença foi o background color
+para parecer um botão*/
 #botão>a
 {
   border-width: 2px;
@@ -133,7 +134,8 @@ o objetivo é direcionar as pessoas ao meu trabalho, alinhando desta forma ao ce
   padding-top: 5px;
   padding-left: 10px;
 
-  color: rgb(196, 117, 215); 
+  color: rgb(196, 117, 215);
+  background-color: rgb(196, 117, 215); 
 }
 
 
