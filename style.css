@@ -8,7 +8,7 @@ Professor Marco Heleno
 31/05/2024
 */
 
-/*aqui encontram-se as duas fontes importadas, a primeira para todo o corpo de texto (h3 e p) e a segunda para o título do projeto (h1)*/
+/*aqui encontram-se as duas fontes importadas, a primeira para todo o corpo de texto (h3, h4 e texto) e a segunda para o título do projeto (h1)*/
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
 
@@ -44,13 +44,13 @@ a:link
 a:hover 
 {
   color: rgb(255, 255, 255);
-  text-decoration: underline;
+  text-decoration: underline; /*caption aparece sublinhada quando sobreposta pelo rato*/
 }
 
 a:active 
 {
   color: rgb(255, 255, 255);
-  text-decoration: underline;
+  text-decoration: underline; /*caption aparece sublinhada quando sobreposta pelo rato*/
 }
 
 a:visited 
@@ -88,7 +88,7 @@ address a:visited
 
 
 
-/*o mesmo acontece à hisperligação do butão nos services, que mantêm sempre a mesma cor*/
+/*o mesmo acontece à hisperligação do botão nos services, que mantêm sempre a mesma cor*/
 #botão a:link 
 {
   color: rgb(255, 255, 255);
@@ -163,7 +163,7 @@ h1
 }
 
 
-/*h3 usado no corpo de texto, foi importada previamente a fonte e já foi ajustada acima, aqui é apenas ajustada para corresponder aos 
+/*h3 usado para os subtítulos, foi importada previamente a fonte e já foi ajustada acima, aqui é apenas ajustada para corresponder aos 
 substítulos, daí um alinhamento diferente*/
 h3
 {
@@ -196,7 +196,7 @@ address
   display: flex; /*de forma a ser responsive*/
   justify-content: flex-start; /*alinhados ao inicio do eixo princial, esquerda*/
   align-items: center;
-  flex-wrap: wrap; /*quebra de linhas*/
+  flex-wrap: wrap; /*quebra de linha*/
   align-content: flex-start;
   gap: 2%;
   padding-top: 2%;
@@ -205,7 +205,7 @@ address
 /*referente às imagens dos projetos no Works*/
 #project_container>a>article>figure 
 {
-  position: relative; /*a posição da imagem não muda, fica posicionada da sua posição de referência (inicial)*/
+  position: relative; /*a posição da imagem não muda, fica posicionada em relaçao à sua posição de referência (inicial)*/
   display: grid;
   place-items: center;
   margin-bottom: 4%;
@@ -341,7 +341,7 @@ nav li
 }
 
 
-/*aqui podemos encontrar as hiperligações referentes às seccçoes na nav, apresenta sempre a mesma 
+/*aqui podemos encontrar as hiperligações referentes às secções na nav, apresenta sempre a mesma 
 cor por motivos de gosto pessoal*/
 nav a:link 
 {
